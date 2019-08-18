@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <label>Show </label>
+  <select [(ngModel)]="selectedPageSize" (change)="getSelectedPageSize()">
+    <option *ngFor="let entry of entriesArr" [ngValue]="entry">
+      {{entry}}
+    </option>
+  </select>
+  <label> entries</label>
+</div>

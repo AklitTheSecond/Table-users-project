@@ -1,0 +1,41 @@
+#wrapper {
+   display: flex;
+   font-size: 24px;
+   height: 100%;
+   width: 100%;
+}
+
+p {
+   text-align: center;
+}
+
+img {
+   height: auto;
+   width: auto;
+   max-width: 200px;
+   max-height: 200px;
+}
+
+p {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.userAvatar {
+   flex: 1 1 auto;  
+   height: 100%;
+   
+}
+
+.repos{
+   flex: 2 1 auto;
+   min-width: 200px;
+   width: 100%;
+   margin-left: 20px;
+}
+
+.followers{
+   flex: 2 1 auto;
+   min-width: 200px;
+   margin-left: 20px;
+}

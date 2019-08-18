@@ -1,0 +1,19 @@
+.globalWrapper {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	height: 100%;
+}
+
+.mainContent {
+	flex: 1 0 auto; 
+	display: flex;
+}
+
+.sidebar {
+	flex: 1 0 auto; 
+}
+
+app-header, app-footer {
+	height: 40px;
+}

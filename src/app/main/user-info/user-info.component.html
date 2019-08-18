@@ -1,0 +1,21 @@
+<div id="wrapper">
+   <div class="userAvatar">
+        <img src="{{userAvatar}}" alt="No avatar">  
+        <p>{{userLogin}}</p> 
+    </div>
+   
+    <div class="repos">
+        <p>Repo list:</p>
+        <hr/>
+        <ul *ngFor="let repo of reposList">
+            <li>{{repo.name}}</li>
+        </ul>
+    </div>
+    <div class="followers">
+        <p>Followers:</p>
+        <hr/>
+        <ul *ngFor="let follower of followersList">
+            <li>{{follower.login}}</li>
+        </ul>
+    </div>
+</div>

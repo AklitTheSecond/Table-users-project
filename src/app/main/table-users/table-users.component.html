@@ -1,0 +1,41 @@
+<div class="wrapper">
+
+    <div id="upperTableWidgets">
+        <app-table-select-box    
+            (setPageSize) = "getSelectedPageSize($event)">
+        </app-table-select-box>
+
+        <app-table-search
+            (setDesiredLogin)="getDesiredLogin($event)">           
+        </app-table-search>      
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th> <th>Login</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tRow" *ngFor="let user of users" (click)="goToUserInfo(user)">
+                <td>{{user.id}}</td>
+                <td>{{user.login}}</td>
+            </tr>
+        <tbody>   
+    </table>
+
+    <div id="lowerTableWidgets">
+        <div id="showingEntries">
+            Showing {{itemsPerPage*(page-1)+1}} to {{getShowingCollection()}}
+             of {{collectionSize}} entries
+        </div>
+        <app-pagination
+            [(page)]="page"
+            [collectionSize]="collectionSize"
+            [pageSize]="itemsPerPage"
+            (goPrev)="onPrev()"
+            (goNext)="onNext()">
+        </app-pagination>
+    </div>
+
+</div>

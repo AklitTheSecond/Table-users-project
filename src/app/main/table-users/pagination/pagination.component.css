@@ -1,0 +1,42 @@
+.paginationWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+   
+.paginationButton {
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.pageNumber {
+    flex: auto;  
+    min-width: 25px;
+    text-align: center;
+    margin: 3px;       
+    font-size: 20px;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: grey;
+    color: beige;
+}
+
+button:active {
+    background-color: #708090;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+button:disabled {
+    background-color: #cccccc;
+    color: black;
+    cursor: default;
+}

@@ -1,0 +1,11 @@
+<div class="paginationWrapper">
+    <div class="paginationButton">
+        <button (click)="onPrev()" [disabled]="page===1" >&lArr;</button>  
+    </div>
+    <div class="pageNumber">
+        <span>{{page}}</span>
+    </div>
+    <div class="paginationButton">
+        <button (click)="onNext()" [disabled]="lastPage()">&rArr;</button>
+    </div>
+</div>
