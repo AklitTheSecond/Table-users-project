@@ -83,7 +83,8 @@ export class  TableUsersComponent implements OnInit {
               'avatar_url': user.avatar_url,
               'repos_url': user.repos_url,
               'followers_url': user.followers_url              
-          }
+          },
+          skipLocationChange: true
       }
   );
 }
